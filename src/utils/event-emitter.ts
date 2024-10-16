@@ -34,6 +34,10 @@ class EventEmitter<T> {
   }
 
   emit(event: T, ...args: any[]) {
+    this.anyEvents.forEach((listener) => {
+      listener(...args)
+    })
+
     if (this.events.has(event) === false) {
       return
     }
