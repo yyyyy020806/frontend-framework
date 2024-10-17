@@ -32,7 +32,10 @@
       "store/*": [
         "src/store/modules/*"
       ]
-    }
+    },
+    "types": [
+      "element-plus/global"
+    ]
   },
   "include": [
     "src/**/*.ts",
