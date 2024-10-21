@@ -15,5 +15,12 @@ export default defineConfig({
       'api': resolve(__dirname, 'src/request/api'),
       'store': resolve(__dirname, 'src/store/modules')
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler'
+      }
+    }
   }
 })
